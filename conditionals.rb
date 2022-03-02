@@ -15,13 +15,13 @@ end
 
 def checkStatus(status)
     if status === "single"
-        puts "No married, still single"
+        puts "Not married yet, still single"
     elsif status === "engaged"
-        puts "Engaged, would be married soon"
+        puts "Engaged, would get married soon"
     elsif status === "married"
-        puts "Married, how is your family doing?"
+        puts "Yay!! Married, how is your family doing?"
     else 
-        puts "Just a random human been with no status"
+        puts "Just a random human being with no significant status"
     end
 end
 
@@ -29,3 +29,23 @@ checkStatus("single")
 checkStatus("engaged")
 checkStatus("married")
 checkStatus("alien")
+
+# create a switch statement
+
+def checkGrade(grade)
+    case grade #just like switch in javascript
+    when 90..100 #just like case "value": in javascript
+        puts "A+" #just like the statement to execute when condition is meet, puts breaks automatically
+    when 80..89
+        puts "A"
+    when 70..79
+        puts "B"
+    else  #just like default in javascript
+        puts "Read and study harder to improve your grades"
+    end
+end    
+
+checkGrade(89)
+checkGrade(60)
+checkGrade(39)
+checkGrade(98)
