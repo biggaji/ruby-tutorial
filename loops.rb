@@ -6,7 +6,7 @@ while i <= 5
     i+=1
 end
 
-#ranges = .. or ...
+#range operator = .. or ...
 
 # for loops
 for i in (0..100).to_a # prints 0 to 100 / (0...100) prints 0 to 99
