@@ -60,3 +60,10 @@ puts str.upcase!
 puts str
 
 #hash maps
+coins = Hash.new
+
+# can set default incase value wasn't found
+coins[0] = "bitcoin"
+coins[1] = "ethereum"
+
+puts coins
